@@ -8,6 +8,8 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import { Experience } from "./components/Experience";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 import { Fragment } from "react";
 
@@ -38,7 +40,11 @@ function App() {
            <AboutMe/>
            <Services/>
           <Experience/>
+          <Portfolio/>
+
+          <Footer/>
            </Fragment>
+
   );
 }
 
