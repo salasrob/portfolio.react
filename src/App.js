@@ -9,7 +9,9 @@ import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import { Experience } from "./components/Experience";
 import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import Contacts from "./components/Contacts";
 
 import { Fragment } from "react";
 
@@ -41,6 +43,8 @@ function App() {
            <Services/>
           <Experience/>
           <Portfolio/>
+          <Testimonials/>
+          <Contacts/>
 
           <Footer/>
            </Fragment>

@@ -1,41 +1,100 @@
 import React from 'react'
-import netflix from "../me.jpg"
-import {Popup}  from "reactjs-popup";
- import "../../node_modules/reactjs-popup/dist/index.css";
+import netflix from "../netflix.png"
+import mern from "../mern-blog.png"
+import cityGuide from "../city-guide-app.png"
+import { Popup } from "reactjs-popup";
+// FONTAWESOME IMPORTS
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
+// REACT POPUPBOX
+import { PopupboxManager, PopupboxContainer } from "react-popupbox";
+import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
 
+      // Netflix
+  const openPopupboxNetflix = () => {
+    const content = (
+      <>
+        <img className="portfolio-image-popupbox" src={netflix} alt="Netflix Clone Project..." />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
+        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://github.com", "_blank")}>https://github.com</a>
+        <br />
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com", "_blank")}>https://github.com</a>
+      </>
+    )
+    PopupboxManager.open({ content })
+  }
 
-//TODO: Add portfolio images, add modal for each, Welrus
+  const popupboxConfigNetflix = {
+    titleBar: {
+      enable: true,
+      text: "Netflix clone project."
+    },
+    fadeIn: true,
+    fadeInSpeed: 500
+  }
+
+  // City Guide App
+  const openPopupboxCityGuide = () => {
+    const content = (
+      <>
+        <img className="portfolio-image-popupbox" src={cityGuide} alt="City Guide App Project..." />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
+        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://github.com", "_blank")}>https://github.com</a>
+        <br />
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com", "_blank")}>https://github.com</a>
+      </>
+    )
+    PopupboxManager.open({ content })
+  }
+
+  const popupboxConfigCityGuide = {
+    titleBar: {
+      enable: true,
+      text: "City Guide App project."
+    },
+    fadeIn: true,
+    fadeInSpeed: 500
+  }
+
+
+    //TODO: Add portfolio images, add modal for each, Welrus
     return (
-        <div id="portfolio" className="portfolio-wrapper">
-                <div className="container">
-                    <h1 className="text-uppercase text-center py-5">
-                        Portfolio
-                    </h1>
-                    <div className="image-box-wrapper row justify-content-center">
-                        <div className="portfolio-image" onClick={console.log("hello")}>
-                            <div className="overflow"></div>
-                    
-                        <img className="portfolio-image" src={netflix} alt="..."/>
-                        
+        <div className="portfolio-wrapper">
+            <div className="container">
+                <h1 className="text-uppercase text-center py-5">
+                    Portfolio
+                </h1>
+
+                <div className="image-box-wrapper row justify-content-center">
+
+                    <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
+                        <img className="portfolio-image" src={netflix} alt="Netflix Clone Project..." />
+                        <div className="overflow"></div>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
-                    <div className="image-box-wrapper row justify-content-center">
-                    <div className="overflow"></div>
-                        <img className="portfolio-image" src={netflix} alt="..."/>
+
+
+                    {/* - */}
+                    <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
+                        <img className="portfolio-image" src={cityGuide} alt="City Guide Project..." />
+                        <div className="overflow"></div>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
-                    <div className="image-box-wrapper row justify-content-center">
-                    <div className="overflow"></div>
-                        <img className="portfolio-image" src={netflix} alt="..."/>
+                    {/* - */}
+                    <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
+                        <img className="portfolio-image" src={cityGuide} alt="City Guide Project..." />
+                        <div className="overflow"></div>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
-                    </div>
+
 
                 </div>
-                <Popup trigger={console.log("hello")} position="center">
-                <img className="portfolio-image-popupbox" src={netflix} alt="netflix.."/>
-    <p>lorem ispu dolor</p>
-    <b>Github:</b>
-                    </Popup>
+
+            </div>
+          <PopupboxContainer {...popupboxConfigNetflix} />
+         <PopupboxContainer {...popupboxConfigCityGuide} />
         </div>
     )
 }
