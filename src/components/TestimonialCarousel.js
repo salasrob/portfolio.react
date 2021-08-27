@@ -16,29 +16,17 @@ const TestimonialCarousel = () => {
             <>
             <img src={avatar1} alt="..."/>
             <div className="myCarousel">
-            <h3>John Doe 1</h3>
-            <p>Ipsum lorem blaj mwkmwal</p>
+            <h3>Save A Warrior</h3>
+            <h5>2021-Present</h5>
+            <p>Save A Warrior helps veterans and first responders get on the other side of PTS and suicidal ideations.</p>
             </div>
             </>
             <>
             <img src={avatar1} alt="..."/>
             <div className="myCarousel">
-            <h3>John Doe 1</h3>
-            <p>Ipsum lorem blaj mwkmwal</p>
-            </div>
-            </>
-            <>
-            <img src={avatar1} alt="..."/>
-            <div className="myCarousel">
-            <h3>John Doe 1</h3>
-            <p>Ipsum lorem blaj mwkmwal</p>
-            </div>
-            </>
-            <>
-            <img src={avatar1} alt="..."/>
-            <div className="myCarousel">
-            <h3>John Doe 1</h3>
-            <p>Ipsum lorem blaj mwkmwal</p>
+            <h3>Save A Warrior</h3>
+            <h5>2018-2020</h5>
+            <p>Save A Warrior helps veterans and first responders get on the other side of PTS and suicidal ideations.</p>
             </div>
             </>
         </Carousel>

@@ -1,8 +1,10 @@
 import React from 'react';
 import { FacebookShareButton,
-        FacebookIcon,
         LinkedinIcon,
-        LinkedinShareButton} from "react-share";
+        } from "react-share";
+import { Link } from "react-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const Footer = () => {
     return (
@@ -17,30 +19,25 @@ const Footer = () => {
                             <a href="tel:555-555-555">+1(719-649-9596)</a>
                         </div>
                         <div className="d-flex">
-                            <p>email</p>
+                            <a href="mailto:devrobsalas@gmail.com">devrobsalas@gmail.com</a>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-2 col-sm-6">
                         <div className="row">
                             <div className="col">
-                                <a className="footer-nav">Home</a>
-                                <a className="footer-nav">About me</a>
-                                <a className="footer-nav">Services</a>
-                                <a className="footer-nav">Home</a>
+                            <Link smooth={true} to="about" className="nav-link" href="#">About</Link>
+                            <Link smooth={true} to="services" className="nav-link" href="#">Skills</Link>
                             </div>
                             <div className="col">
-                                <a className="footer-nav">Experience</a>
-                                <a className="footer-nav">Portfolio</a>
-                                <a className="footer-nav">Contact</a>
+                            <Link smooth={true} to="experience" className="nav-link" href="#">Experience</Link>
+                            <Link smooth={true} to="portfolio" className="nav-link" href="#">Portfolio</Link>
+                            <Link smooth={true} to="contact" className="nav-link" href="#">Contact</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
                         <div className="d-flex justify-content-center">
-                            <LinkedinShareButton ur={"url.com"}
-                            quote={"Software Engineer"}
-                            hashtag="#javascript"/>
-                            <LinkedinIcon className="mx-3" size={36}/>
+                           <a href="https://www.linkedin.com/in/robertsalas/"><LinkedinIcon className="mx-3" size={36}/></a>
                         </div>
                         <p className="pt-3 text-center">
                             Copyright&copy;

@@ -14,9 +14,7 @@ const AboutMe = () => {
                 <div className="col-lg-6 col-xm-12">
                     <h1 className="about-heading">About me</h1>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate pretium nibh convallis eleifend. Nulla sit amet nibh in nisl aliquam rutrum ac vel nisi. Suspendisse nec velit at ex sollicitudin malesuada id ut nulla. Fusce consequat quam sit amet arcu faucibus aliquet. Nullam semper vulputate tortor eget feugiat. Pellentesque efficitur est id consectetur molestie. Praesent eros neque, pulvinar sed venenatis eget, luctus vitae urna.
-
-Sed lacinia convallis felis. Pellentesque pulvinar augue dignissim nulla iaculis, eget semper mauris elementum. Vivamus auctor nisl nec sem consectetur, quis iaculis eros condimentum. Proin erat mi, blandit vel mollis eget, hendrerit varius magna. Vestibulum pellentesque leo ac ultricies consequat. In ornare, arcu nec egestas elementum, metus odio consectetur magna, a eleifend odio neque vel erat. Nam suscipit, ligula ac maximus posuere, sem nisl egestas mauris, a dignissim odio lacus sit amet arcu. Duis sodales, lectus et sodales efficitur, orci orci gravida sapien, quis faucibus dui ligula tincidunt leo. Nunc venenatis, augue at volutpat dignissim, eros dolor gravida dui, et molestie quam justo eget nisl. Nam accumsan diam metus. Etiam id imperdiet velit, id maximus nisi. Aenean eu libero urna. Morbi pellentesque luctus aliquam. Proin eget ullamcorper dolor. Praesent ornare mattis orci sed ullamcorper.
+                Full Stack Developer currently capable of using JavaScript, C#, and SQL. Experience in React, .NET Core, BASH and Vim. Comfortable working within an Agile/Scrum team, and utilizing platforms such as DBeaver, Microsoft SQL Server Management, VSCode, Visual Studio, Visual Studio for Mac, GitHub, Postman, Testim and JIRA.
                 </p>
                 </div>
             </div>
