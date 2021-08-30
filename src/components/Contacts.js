@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Formik } from "formik";
-
-
+import Grid from '@material-ui/core/Grid';
 
 const Contacts = () => {
 
@@ -11,7 +10,6 @@ const Contacts = () => {
     const templateId = "template_iyntbcd";
     const userId = "user_pVWzOTDctaIp9le8gZc8Y";
     
-
     const onSubmit = (data) => {
         console.log(userId)
         emailjs.send(serviceId, templateId, {
@@ -31,7 +29,9 @@ const Contacts = () => {
             <h1 className="text-center">Contact me</h1>
             <p>Please fill out the form and describe your project needs. I'll get back to you as soon as I can.</p>
             <div className="success-message text-center">{successMessage}</div>
-            <div className="container">
+            <Grid container spacing={2}>
+
+           <div className="container">
                 <Formik
                     initialValues={{ name: "", email: "", phone: "", subject: "", description: "" }}
                     validate={values => {
@@ -87,7 +87,9 @@ const Contacts = () => {
                         isSubmitting,
                     }) => (
                         <form onSubmit={handleSubmit}>
+                        
                             <div className="row">
+                
                                 <div className="col-md-6 col-xs-12">
 
                                     <div className="text-center">
@@ -119,7 +121,6 @@ const Contacts = () => {
                                     </div>
                                     <span className="error-message">{errors.phone && touched.phone && errors.phone}</span>
 
-
                                     <div className="text-center">
                                         <input
                                             id="email"
@@ -146,12 +147,11 @@ const Contacts = () => {
                                             onBlur={handleBlur}
                                             value={values.subject}
                                         />
+                                                 <div className="line"></div>
                                     </div>
-                                    <div className="line"></div>
+                                    <span className="error-message"> {errors.subject && touched.subject && errors.subject}</span>
                                 </div>
-                                <span className="error-message"> {errors.subject && touched.subject && errors.subject}</span>
-
-
+  
                                 <div className="col-md-6 col-xs-12">
                                     <div className="text-center">
                                         <textarea
@@ -171,12 +171,12 @@ const Contacts = () => {
                                     <div className="text-center"></div>
                                     <button className="btn-main-offer contact-btn" type="submit" disabled={isSubmitting}>Contact Me</button>
                                 </div>
-
                             </div>
                         </form>
                     )}
                 </Formik>
-            </div>
+                </div>
+            </Grid>
         </div>
     )
 }

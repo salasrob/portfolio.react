@@ -1,7 +1,6 @@
 import React from "react";
 import TestimonialCarousel from "./TestimonialCarousel";
 
-
 const Testimonials = () => {
     return (
         <div className="testimonials">
