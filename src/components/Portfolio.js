@@ -1,9 +1,5 @@
 import React from 'react'
 import welrus from "../welrus.png"
-// FONTAWESOME IMPORTS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
-// REACT POPUPBOX
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
@@ -18,12 +14,10 @@ const Portfolio = () => {
 nearby.</p>
         <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://welrus.azurewebsites.net/", "_blank")}>https://welrus.azurewebsites.net/</a>
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com", "_blank")}>Private</a>
       </>
     )
     PopupboxManager.open({ content })
   }
-
   const popupboxConfigWelrus = {
     titleBar: {
       enable: true,
@@ -32,12 +26,6 @@ nearby.</p>
     fadeIn: true,
     fadeInSpeed: 500
   }
-
- 
-
-  
-
-    //TODO: Add portfolio images, add modal for each, Welrus
     return (
         <div className="portfolio-wrapper" id="portfolio">
             <div className="container">
@@ -50,21 +38,14 @@ nearby.</p>
                     <div className="portfolio-image-box" onClick={openPopupboxWelrus}>
                         <img className="portfolio-image" src={welrus} alt="Welrus project.." />
                         <div className="overflow"></div>
-                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
+                     
                     </div>
-
-
                     {/* - */}
-               
-
-
                 </div>
-
             </div>
           <PopupboxContainer {...popupboxConfigWelrus} />
      
         </div>
     )
 }
-
 export default Portfolio

@@ -1,10 +1,6 @@
 import React from 'react';
-import { FacebookShareButton,
-        LinkedinIcon,
-        } from "react-share";
+import { LinkedinIcon } from "react-share";
 import { Link } from "react-scroll";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 const Footer = () => {
     return (
