@@ -1,5 +1,5 @@
 {
-  "homepage": "https://salasrob.github.io/portfolio.react/",
+  "homepage": ".",
   "name": "app",
   "version": "0.1.0",
   "private": true,
@@ -26,11 +26,13 @@
     "react-share": "^4.4.0",
     "react-typed": "^1.2.0",
     "reactjs-popup": "^2.0.5",
+    "serve": "^12.0.0",
     "tsparticles": "^1.33.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s /Users/robertsalas/Repos/portfolio.react/build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
