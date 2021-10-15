@@ -1,5 +1,5 @@
 import React from "react";
-import author from "../me.jpg";
+import author from "../Images/me.jpg";
 
 const AboutMe = () => {
     return (

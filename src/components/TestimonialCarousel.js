@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import avatar1 from "../avatar-3.png";
+import avatar1 from "../Images/avatar-3.png";
 
 const TestimonialCarousel = () => {
     return (

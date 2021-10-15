@@ -63,7 +63,7 @@ nav ul li {
 
 .header-wrapper{
   position: relative;
-  background: url(wall-and-laptop-background.jpg) no-repeat;
+  background: url(./Images/wall-and-laptop-background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -392,7 +392,7 @@ nav ul li {
   }
 
 .testimonials{
-  background-image: url(testimonials-bg.jpg);
+  background-image: url(./Images/wall-and-laptop-background.jpg);
   background-size: cover;
   background-color: var(--primary-black);
   text-align: center;
