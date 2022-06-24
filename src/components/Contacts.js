@@ -27,7 +27,8 @@ const Contacts = () => {
     return (
         <div className="contacts" id="contact">
             <h1 className="text-center">Contact me</h1>
-            <p>Please fill out the form and describe the role you have available. I'll get back to you as soon as I can.</p>
+            <p>Let's have a chat or a coffee!</p>
+            <p>I will never share your personal information with anyone because I'm not a jerk.</p>
             <div className="success-message text-center">{successMessage}</div>
             <Grid container spacing={2}>
 

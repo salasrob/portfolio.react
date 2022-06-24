@@ -12,17 +12,17 @@ const Navbar = () => {
 
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">About</Link>
-      </li>
+      </li> */}
       <li className="nav-item">
         <Link smooth={true} to="services" offset={-110}  className="nav-link" href="#">Skills</Link>
       </li>
       <li className="nav-item">
-        <Link smooth={true} to="experience" offset={-110}  className="nav-link" href="#">Experience</Link>
+        <Link smooth={true} to="portfolio" offset={-110}  className="nav-link" href="#">Portfolio</Link>
       </li>
       <li className="nav-item">
-        <Link smooth={true} to="portfolio" offset={-110}  className="nav-link" href="#">Portfolio</Link>
+        <Link smooth={true} to="experience" offset={-110}  className="nav-link" href="#">Experience</Link>
       </li>
       <li className="nav-item">
         <Link smooth={true} to="contact" offset={-110}  className="nav-link" href="#">Contact</Link>

@@ -18,14 +18,10 @@ body {
 font-family: "Roboto Condensed" ,sans-serif !important;
 }
 
-
 /************************ NAVBAR *********************************/
 nav{
   z-index: 2;
 }
-
-
-
 
 /*----- MENU LINKS --------*/
 nav a.nav-link {
@@ -38,15 +34,12 @@ nav ul li {
   text-transform: uppercase;
 }
 
-
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
   border-top: 0.1875rem solid var(--primary-dark);
 }
-
-
 
 .navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
@@ -59,7 +52,6 @@ nav ul li {
   display: grid;
   justify-content: space-evenly;
 }
-
 
 .header-wrapper{
   position: relative;
@@ -97,12 +89,10 @@ nav ul li {
   }
 }
 
-
 .typed-text{
   font-size: 2rem;
   color: var(--primary-white);
 }
-
 
 .btn-main-offer{
   border: 1px solid var(--primary-red);
@@ -132,20 +122,6 @@ nav ul li {
   }
 }
 
-.photo-wrap{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-img{
-  width:16rem;
-  border-radius: 50%;
-  padding:0.3rem;
-  border:1px solid var(--primary-orange);
-}
-
-
 .about-heading{
   color:var(--primary-orange);
   text-transform: uppercase;
@@ -156,7 +132,6 @@ nav ul li {
     width:10rem;
   }
 }
-
 
 .services{
   text-align: center;
@@ -203,6 +178,7 @@ nav ul li {
 .services .box:hover .icon{
   color:var(--primary-dark);
 }
+
 .services .box:hover .circle{
   background:var(--primary-white);
 }
@@ -211,11 +187,9 @@ nav ul li {
   color:var(--primary-white);
 }
 
-
-
-
 .experience{
   padding: 0.7rem;
+  background: var(--primary-light-grey);
 }
 
 .experience-wrapper{
@@ -298,11 +272,7 @@ nav ul li {
   }
 }
 
-
-
-
 .portfolio-wrapper{
-  background: var(--primary-light-grey);
   padding: 3rem 0;
 }
 
@@ -315,7 +285,6 @@ nav ul li {
   border:1 solid var(--primary-orange);
   padding: 0 0.5rem;
 }
-
 
 .portfolio-image-box{
   position: relative;
@@ -390,69 +359,6 @@ nav ul li {
       width: 30%;
     }
   }
-
-.testimonials{
-  background-image: url(./Images/wall-and-laptop-background.jpg);
-  background-size: cover;
-  background-color: var(--primary-black);
-  text-align: center;
-  padding-bottom: 4rem;
-  margin-bottom: 0;
-  width: 100%;
-}
-
-.testimonials h1{
-  color: var(--primary-orange);
-  padding: 3rem 0;
-  text-transform: uppercase;
-}
-
-.testimonials-content{
-  text-align: center;
-  max-width: 53.125rem;
-  margin: 0 auto 2rem auto;
-  background:var(--primary-transparent-black);
-}
-
-.myCarousel{
-  color: var(--primary-white);
-  background: transparent;
-  margin-top: -6%;
-  width: 54%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 6%;
-  padding-bottom: 8%;
-  padding-left: 5%;
-  padding-right: 5%;
-  height: 17.875rem;
-}
-
-.myCarousel h3{
-  color: var(--primary-orange);
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.myCarousel p {
-  color: var(--primary-grey);
-}
-
-.carousel .slide{
-  background: transparent !important;
-  height: 100% !important;
-  padding-top: 2rem;
-}
-
-.carousel-root{
-  margin:auto !important;
-  margin-top:3% !important;
-}
-
-.carousel .slide img{
-  width: 10rem !important;
-  border-radius: 50%;
-}
-
 
 .contacts{
   background: var(--primary-dark);
@@ -541,7 +447,6 @@ textarea.form-control{
 .contacts {
   overflow-x:hidden;
 }
-
   .contacts .container{
     padding: 0 1rem;
   }
@@ -551,16 +456,14 @@ textarea.form-control{
   }
 }
 
-
-
 .footer{
   background: var(--primary-black);
-  color: var(--primary-dark-grey);
+  color: var(--primary-white);
   padding: 3rem;
 }
 .footer a{
   text-decoration: none;
-  color: var(--primary-dark-grey);
+  color: var(--primary-white);
 }
 
 .footer a:hover{

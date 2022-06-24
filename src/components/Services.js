@@ -1,39 +1,40 @@
 import React from 'react'
+import react from "../Images/react.png";
+import jsLogo from "../Images/jslogo.png";
+import net from "../Images/net.png";
+import cpp from "../Images/cpp.png";
+import csharp from "../Images/csharp.png";
 
 const Services = () => {
     return (
         <div id="services" className="services">
-            <h1 className="py-5">Skills</h1>
+            <h1 className="py-5">Active Skills</h1>
+            <p>These are the skills I actively maintain or am currently working with</p>
             <div className="container">
                 <div className="row">
                     <div className="col-md-3 lg-3 col-sm-6">
                         <div className="box">
-                            <h3>React</h3>     
+                            <img src={react} alt='React logo'/>     
                         </div>
                     </div>
                     <div className="col-md-3 lg-3 col-sm-6">
                         <div className="box">
-                            <h3>Javascript</h3>
+                            <img src={jsLogo} alt='Javascript logo'/>    
                         </div>
                     </div>
                     <div className="col-md-3 lg-3 col-sm-6">
                         <div className="box">
-                            <h3>.Net Core</h3>     
+                            <img src={net} alt='.NET logo'/>      
                         </div>
                     </div>
                     <div className="col-md-3 lg-3 col-sm-6">
                         <div className="box">
-                            <h3>C#</h3>        
+                            <img src={csharp} alt='C Sharp logo'/>    
                         </div>
                     </div>
                     <div className="col-md-3 lg-3 col-sm-6">
                         <div className="box">
-                            <h3>SQL</h3>          
-                        </div>
-                    </div>
-                    <div className="col-md-3 lg-3 col-sm-6">
-                        <div className="box">
-                            <h3>BASH</h3>
+                            <img src={cpp} alt='C Plus Plus logo'/>     
                         </div>
                     </div>
                 </div>
